@@ -32,7 +32,7 @@ function CreatePost() {
       navigate("/post/" + response.data);
       console.log("New post was created");
     } catch (error) {
-      console.log("There was an error!");
+      console.log(error + "There was an error!");
     }
   }
 
@@ -60,12 +60,9 @@ function CreatePost() {
             <small>Body Content</small>
           </label>
           <textarea
-            name="body"
-            id="post-body"
             className="body-content tall-textarea form-control"
-            type="text"
             onChange={(e) => setBody(e.target.value)}
-          ></textarea>
+          />
         </div>
 
         <button className="btn btn-primary">Save New Post</button>
