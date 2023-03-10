@@ -86,7 +86,7 @@ function Search() {
             autoComplete="off"
             id="live-search-field"
             className="live-search-field"
-            placeholder="What are you interested in?"
+            placeholder='Try searching "lorem ipsum"'
             onChange={handleInput}
           />
           <span

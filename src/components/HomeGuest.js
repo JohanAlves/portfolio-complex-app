@@ -254,6 +254,9 @@ function HomeGuest() {
             believe getting back to actually writing is the key to enjoying the
             internet again.
           </p>
+          <p className="lead text-muted">Demo Credentials:</p>
+          <p className="text-muted">username: demo1234</p>
+          <p className="text-muted">password: demo1234</p>
         </div>
         <div className="col-lg-5 pl-lg-5 pb-3 py-lg-5">
           <form onSubmit={handleSubmit}>

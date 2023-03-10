@@ -132,6 +132,7 @@ function EditPost() {
           );
           dispatch({ type: "saveRequestFinished" });
           appDispatch({ type: "flashMessage", value: "Post was updated." });
+          navigate(`/post/${state.id}`);
         } catch (e) {
           console.log("There was a problem");
         }
