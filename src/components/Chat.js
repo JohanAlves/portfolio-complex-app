@@ -24,7 +24,7 @@ function Chat() {
   }, [appState.isChatOpen]);
 
   useEffect(() => {
-    socket.current = io("http://localhost:8080");
+    socket.current = io("https://complexapp-api.johanalves.com:8080");
 
     socket.current.on("chatFromServer", (message) => {
       setState((draft) => {

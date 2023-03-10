@@ -25,7 +25,7 @@ const CreatePost = React.lazy(() => import("./components/CreatePost"));
 const Search = React.lazy(() => import("./components/Search"));
 const Chat = React.lazy(() => import("./components/Chat"));
 
-Axios.defaults.baseURL = "http://localhost:8080";
+Axios.defaults.baseURL = "https://complexapp-api.johanalves.com:8080";
 
 function App() {
   const initialState = {
